@@ -1,0 +1,90 @@
+/* Add this to center the main container */
+/* Chrome, Safari, Edge, Opera remove arrow inside input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Update your container styles */
+.container {
+    width: 700px;
+    padding: 30px;
+    border: 2px solid #c1c1c1;
+    border-radius: 10px;
+    text-align: center; /* Centers text content */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Improve converter alignment */
+.converter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Changed from space-around */
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Make form elements consistent */
+.converter input, 
+.selector1, 
+.selector2,
+.btn {
+    height: 40px;
+    padding: 8px 15px;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#temperature {
+    height: 20px;
+}
+
+/* Specific width for selects */
+.selector1, 
+.selector2 {
+    width: 150px;
+}
+
+/* Button specific styles */
+.btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.btn:hover {
+    background-color: rgb(67, 67, 67);
+}
+
+/* Label styling */
+.converter div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.unit-1 p, .unit-2 p {
+    margin: 5px;
+}
+
+.alert {
+    color: red;
+}

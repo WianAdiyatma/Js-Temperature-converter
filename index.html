@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Temperature converter
+        </h1>
+        <h2>
+            Enter the Temperature, select unit and submit.
+        </h2>
+        <div class="converter">
+            <input type="number" name="Temperature" id="temperature" placeholder="0.00" maxlength="3">
+            <div class="unit-1">
+                <p>From unit</p>
+                <select class="selector1 none">
+                    <option value="farenheit">farenheit</option>
+                    <option value="celsius">celsius</option>
+                </select>
+            </div>
+
+            <div class="unit-2">
+                <p>To unit</p>
+                <select class="selector2 none">
+                    <option value="farenheit">farenheit</option>
+                    <option value="celsius">celsius</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Convert</button>
+        </div>
+        <p class="resultText"></p>
+        <p class="alert"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
